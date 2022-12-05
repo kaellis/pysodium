@@ -30,7 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import ctypes
 import ctypes.util
 
-sodium = ctypes.cdll.LoadLibrary('libsodium')
+sodium = ctypes.cdll.LoadLibrary('/var/task/libsodium')
 if not sodium._name:
     raise ValueError('Unable to find libsodium')
 
